@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply h-screen w-screen;
+}
+
+.react-datepicker-time__input {
+  @apply w-full !important;
+}
+
+.react-datepicker__input-container input {
+  @apply text-sm w-[90%] rounded shadow-inner border-2 border-solid border-slate-500 leading-4 box-border py-1 px-3 text-black;
+}
+
+.react-datepicker__input-container input[disabled] {
+  @apply bg-[#dddf] shadow-none;
+}
