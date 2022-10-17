@@ -1,0 +1,26 @@
+{
+  "made_by": "Feito Por",
+  "use_current_date": "Usar data atual",
+  "time": "Tempo",
+  "no_difference_date": "Não existe diferenças entre essas datas",
+  "initial_date": "Data Inicial",
+  "final_date": "Data Final",
+  "select_valid_date": "Selecione uma data válida",
+  "date_format": "{{day}}/{{month}}/{{year}}",
+  "units": {
+    "year": "ano",
+    "years": "anos",
+    "month": "mês",
+    "months": "meses",
+    "week": "semana",
+    "weeks": "semanas",
+    "day": "dia",
+    "days": "dias",
+    "hour": "hora",
+    "hours": "horas",
+    "minute": "minuto",
+    "minutes": "minutos",
+    "second": "segundo",
+    "seconds": "segundos"
+  }
+}

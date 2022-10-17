@@ -6,11 +6,21 @@
   "initial_date": "Fecha inicial",
   "final_date": "Fecha final",
   "select_valid_date": "Seleccione una fecha válida",
+  "date_format": "{{day}}/{{month}}/{{year}}",
   "units": {
+    "year": "año",
+    "years": "años",
+    "week": "semana",
     "weeks": "semanas",
+    "day": "día",
     "days": "días",
+    "month": "mes",
+    "months": "meses",
+    "hour": "hora",
     "hours": "horas",
+    "minute": "minuto",
     "minutes": "minutos",
+    "second": "segundo",
     "seconds": "segundos"
   }
 }
