@@ -1,7 +1,10 @@
-import { StrictMode } from 'react'
+import { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 
-import App from './components/App'
+import App from './components/app'
+
+import './utils/configs/i18n'
+import './utils/configs/datepicker-langs'
 
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 import reportWebVitals from './reportWebVitals'
@@ -11,7 +14,9 @@ const root = createRoot(container)
 
 root.render(
   <StrictMode>
-    <App />
+    <Suspense fallback={null}>
+      <App />
+    </Suspense>
   </StrictMode>
 )
 

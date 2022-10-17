@@ -1,0 +1,16 @@
+{
+  "made_by": "Hecho Por",
+  "use_current_date": "Usar la fecha actual",
+  "time": "Tiempo",
+  "no_difference_date": "No hay diferencias entre estas fechas.",
+  "initial_date": "Fecha inicial",
+  "final_date": "Fecha final",
+  "select_valid_date": "Seleccione una fecha válida",
+  "units": {
+    "weeks": "semanas",
+    "days": "días",
+    "hours": "horas",
+    "minutes": "minutos",
+    "seconds": "segundos"
+  }
+}

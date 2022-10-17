@@ -1,11 +1,13 @@
-import InputDate from '../InputDate'
+import { useTranslation } from 'react-i18next'
 
-interface onChangeProps {
+import InputDate from '../input-date'
+
+type onChangeProps = {
   date: Date
   useNow: boolean
 }
 
-interface DatePickerProps {
+type DatePickerProps = {
   onChange({ date, useNow }: onChangeProps): void
   useNow: boolean
   id: string
@@ -14,6 +16,7 @@ interface DatePickerProps {
 }
 
 function DatePicker({ onChange, useNow, id, text, value }: DatePickerProps) {
+  const { t } = useTranslation()
   const dateChangeHandler = (inputValue: Date) => onChange({ date: inputValue, useNow })
 
   const useNowChangeHandler = () => onChange({ date: value, useNow: !useNow })
@@ -24,7 +27,7 @@ function DatePicker({ onChange, useNow, id, text, value }: DatePickerProps) {
       <InputDate value={value} id={id} isDisabled={useNow} onChange={dateChangeHandler} />
       <div>
         <label className='text-base sm:text-lg mr-2' htmlFor={`use-now_${id}`}>
-          Use current date?
+          {t('use_current_date')}?
         </label>
         <input
           type='checkbox'

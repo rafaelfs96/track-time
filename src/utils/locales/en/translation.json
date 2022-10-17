@@ -1,0 +1,16 @@
+{
+  "made_by": "Made By",
+  "use_current_date": "Use current date",
+  "time": "Time",
+  "no_difference_date": "There is no differences between these dates",
+  "initial_date": "Initial Date",
+  "final_date": "Final Date",
+  "select_valid_date": "Select a valid date",
+  "units": {
+    "weeks": "weeks",
+    "days": "days",
+    "hours": "hours",
+    "minutes": "minutes",
+    "seconds": "seconds"
+  }
+}

@@ -32,15 +32,18 @@ export function formatTime(dateObj: {
   }
 }
 
-export function timeBetween({ startDate = new Date(), endDate = new Date() }) {
+export function timeBetween(
+  { startDate = new Date(), endDate = new Date() },
+  units?: { weeks: string; days: string; hours: string; minutes: string; seconds: string }
+) {
   let delta = Math.abs(endDate.getTime() - startDate.getTime()) / 1000
 
   const time = [
-    ['weeks', 7 * 24 * 60 * 60],
-    ['days', 24 * 60 * 60],
-    ['hours', 60 * 60],
-    ['minutes', 60],
-    ['seconds', 1]
+    [units?.weeks || 'weeks', 7 * 24 * 60 * 60],
+    [units?.days || 'days', 24 * 60 * 60],
+    [units?.hours || 'hours', 60 * 60],
+    [units?.minutes || 'minutes', 60],
+    [units?.seconds || 'seconds', 1]
   ]
 
   const calculatedTime = time.reduce((acc, [key, value]) => {
