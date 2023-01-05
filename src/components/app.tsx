@@ -1,9 +1,9 @@
 import './index.css'
 
-import Clock from './clock'
-import TimeBetween from './time-between'
-import Footer from './footer'
-import LangSelector from './lang-selector'
+import { Clock } from './clock'
+import { TimeBetween } from './time-between'
+import { Footer } from './footer'
+import { LangSelector } from './lang-selector'
 
 function App() {
   return (

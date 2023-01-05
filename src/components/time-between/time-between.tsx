@@ -2,10 +2,10 @@ import { Fragment, useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { timeBetween } from '../../utils/time'
 
-import DatePicker from './date-picker'
-import TimePresentation from './time-presentation'
+import { DatePicker } from './date-picker'
+import { TimePresentation } from './time-presentation'
 
-function TimeBetween() {
+export function TimeBetween() {
   const { t: translation } = useTranslation()
 
   const [start, setStart] = useState({ date: new Date(), useNow: false })
@@ -56,5 +56,3 @@ function TimeBetween() {
     </Fragment>
   )
 }
-
-export default TimeBetween

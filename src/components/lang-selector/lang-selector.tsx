@@ -1,7 +1,7 @@
 import i18next from 'i18next'
 import { translations } from '../../utils/locales'
 
-function LangSelector() {
+export function LangSelector() {
   const langs = Object.keys(translations)
 
   return (
@@ -19,5 +19,3 @@ function LangSelector() {
     </div>
   )
 }
-
-export default LangSelector

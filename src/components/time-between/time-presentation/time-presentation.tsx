@@ -4,7 +4,7 @@ type TimePresentationProps = {
   time: string
 }
 
-function TimePresentation({ time }: TimePresentationProps) {
+export function TimePresentation({ time }: TimePresentationProps) {
   const { t: translation } = useTranslation()
   return (
     <p className='m-5 text-xl text-white sm:text-2xl'>
@@ -12,5 +12,3 @@ function TimePresentation({ time }: TimePresentationProps) {
     </p>
   )
 }
-
-export default TimePresentation

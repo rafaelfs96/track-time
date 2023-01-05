@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 
 import { rawTime, formatTime } from '../../utils/time'
 
-function Clock() {
+export function Clock() {
   const { t: translation } = useTranslation()
   const [date, setTime] = useState(rawTime())
 
@@ -28,5 +28,3 @@ function Clock() {
     </h1>
   )
 }
-
-export default Clock

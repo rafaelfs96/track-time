@@ -1,1 +1,1 @@
-export { default } from './time-presentation'
+export * from './time-presentation'

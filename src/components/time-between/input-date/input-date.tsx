@@ -1,7 +1,8 @@
+import 'react-datepicker/dist/react-datepicker.css'
+
 import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
 
-import 'react-datepicker/dist/react-datepicker.css'
 import DatePicker from 'react-datepicker'
 
 type InputDateProps = {
@@ -11,7 +12,7 @@ type InputDateProps = {
   onChange(inputValue: Date): void
 }
 
-function InputDate({ value, id, isDisabled, onChange }: InputDateProps) {
+export function InputDate({ value, id, isDisabled, onChange }: InputDateProps) {
   const { t: translation } = useTranslation()
 
   return (
@@ -28,5 +29,3 @@ function InputDate({ value, id, isDisabled, onChange }: InputDateProps) {
     />
   )
 }
-
-export default InputDate

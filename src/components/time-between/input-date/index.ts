@@ -1,1 +1,1 @@
-export { default } from './input-date'
+export * from './input-date'

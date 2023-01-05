@@ -1,1 +1,1 @@
-export { default } from './time-between'
+export * from './time-between'
