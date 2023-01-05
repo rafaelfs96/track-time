@@ -5,9 +5,11 @@ type TimePresentationProps = {
 }
 
 function TimePresentation({ time }: TimePresentationProps) {
-  const { t } = useTranslation()
+  const { t: translation } = useTranslation()
   return (
-    <p className='m-5 text-xl text-white sm:text-2xl'>{!time ? t('no_difference_date') : time}</p>
+    <p className='m-5 text-xl text-white sm:text-2xl'>
+      {!time ? translation('no_difference_date') : time}
+    </p>
   )
 }
 

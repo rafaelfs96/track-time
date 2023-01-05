@@ -12,7 +12,7 @@ type InputDateProps = {
 }
 
 function InputDate({ value, id, isDisabled, onChange }: InputDateProps) {
-  const { t } = useTranslation()
+  const { t: translation } = useTranslation()
 
   return (
     <DatePicker
@@ -22,7 +22,7 @@ function InputDate({ value, id, isDisabled, onChange }: InputDateProps) {
       name={id}
       id={id}
       showTimeInput
-      timeInputLabel={`${t('time')}:`}
+      timeInputLabel={translation('time')}
       disabled={isDisabled}
       onChange={onChange}
     />

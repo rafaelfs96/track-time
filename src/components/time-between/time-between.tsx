@@ -6,7 +6,7 @@ import DatePicker from './date-picker'
 import TimePresentation from './time-presentation'
 
 function TimeBetween() {
-  const { t } = useTranslation()
+  const { t: translation } = useTranslation()
 
   const [start, setStart] = useState({ date: new Date(), useNow: false })
   const [end, setEnd] = useState({ date: new Date(), useNow: true })
@@ -21,14 +21,14 @@ function TimeBetween() {
 
   const updateResults = () => {
     if ((!start.date && !start.useNow) || (!end.date && !end.useNow)) {
-      return setResult(t('select_valid_date'))
+      return setResult(translation('select_valid_date'))
     }
     const sdate = start.useNow ? new Date() : new Date(start.date)
     const edate = end.useNow ? new Date() : new Date(end.date)
 
     const updatedResults = timeBetween(
       { startDate: sdate, endDate: edate },
-      t('units', { returnObjects: true })
+      translation('units', { returnObjects: true })
     )
     setResult(updatedResults)
   }
@@ -37,14 +37,14 @@ function TimeBetween() {
     <Fragment>
       <div className='flex flex-row flex-wrap justify-center text-white'>
         <DatePicker
-          text={t('initial_date')}
+          text={translation('initial_date')}
           id='startDate'
           value={start.date}
           useNow={start.useNow}
           onChange={setStart}
         />
         <DatePicker
-          text={t('final_date')}
+          text={translation('final_date')}
           id='endDate'
           value={end.date}
           useNow={end.useNow}

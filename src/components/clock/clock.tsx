@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { rawTime, formatTime } from '../../utils/time'
 
 function Clock() {
-  const { t } = useTranslation()
+  const { t: translation } = useTranslation()
   const [date, setTime] = useState(rawTime())
 
   useEffect(() => {
@@ -15,7 +15,7 @@ function Clock() {
 
   const { day, month, year, hour, minute, second } = formatTime(date)
 
-  const formattedDate = t('date_format', { day, month, year })
+  const formattedDate = translation('date_format', { day, month, year })
 
   return (
     <h1 className='flex flex-col items-center m-5 text-white'>

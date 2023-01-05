@@ -4,15 +4,12 @@ import TRANSLATION_BR from './br/translation.json'
 
 export const translations = {
   es: {
-    translation: TRANSLATION_ES,
-    icon: 'https://countryflagsapi.com/svg/es'
+    translation: TRANSLATION_ES
   },
   en: {
-    translation: TRANSLATION_EN,
-    icon: 'https://countryflagsapi.com/svg/us'
+    translation: TRANSLATION_EN
   },
   ptBR: {
-    translation: TRANSLATION_BR,
-    icon: 'https://countryflagsapi.com/svg/br'
+    translation: TRANSLATION_BR
   }
 }
